@@ -1,0 +1,257 @@
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.center-col {
+  flex: 1;
+  /* background: #aaa; */
+  overflow-y: scroll;
+  
+}
+/* ::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  -webkit-box-shadow: inset 0 0 40px rgba(216,216,216); 
+} */
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #D8D8D8; 
+  border-radius: 15px;
+}
+
+/* Handle on hover
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+} */
+
+.content {
+  position: absolute;
+  top: 50%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+}
+/* .column-align {
+  width: 100px;
+  clear: left;
+  float: left;
+  text-align: right;
+  padding-right: 2px;
+} */
+
+.dt {
+  display: block;
+  float: left;
+  width: 135px;
+  text-align: right;
+}
+
+/* .MuiPaper-elevation24 {
+  box-shadow: 0px 30px 32px 59px rgba(0, 0, 0, 0.2),
+    0px 24px 43px 3px rgba(0, 0, 0, 0.14), 0px 9px 46px 8px rgba(0, 0, 0, 0.12);
+} */
+
+.dt:after {
+  content: ":";
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.dot {
+  width: 40px;
+  height: 40px;
+  margin-top: 10px;
+  background-color: lightgray;
+}
+
+.ui-state::after {
+  content: "";
+  background: green;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  position: relative;
+  /* left: 115px; */
+  top: 6px;
+  display: inline-block;
+}
+
+.ui-state-disabled::after {
+  content: "";
+  background: #d3d3d3;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  position: relative;
+  /* left: 115px; */
+  top: 6px;
+  display: inline-block;
+}
+.dd {
+  display: block;
+}
+
+.border-top {
+  padding-top: 7px;
+}
+
+.btn-danger {
+  width: 130px;
+  border-radius: 15px;
+}
+
+/* chat board styling */
+
+.received_withd_msg p {
+  background: #ebebeb none repeat scroll 0 0;
+  border-radius: 0 15px 15px 15px;
+  color: #646464;
+  font-size: 14px;
+  margin: 0;
+  padding: 5px 10px 5px 12px;
+  width: 100%;
+}
+
+.sent_msg p {
+  /* background: #0465ac;
+  border-radius: 12px 15px 15px 0;
+  font-size: 14px;
+  margin: 0;
+  color: #fff;
+  padding: 5px 10px 5px 12px;
+  width: 100%; */
+  background: #ebebeb none repeat scroll 0 0;
+  border-radius: 0 15px 15px 15px;
+  color: #646464;
+  font-size: 14px;
+  margin: 0;
+  padding: 5px 10px 5px 12px;
+  width: 100%;
+}
+
+.input_msg_write input {
+  background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+  border: medium none;
+  color: #4c4c4c;
+  font-size: 15px;
+  min-height: 48px;
+  width: 100%;
+  outline: none;
+}
+
+.type_msg {
+  border-top: 1px solid #c4c4c4;
+  position: relative;
+  margin-top: 26px;
+}
+
+.msg_send_btn {
+  background: #05728f none repeat scroll 0 0;
+  border: none;
+  border-radius: 50%;
+  color: #fff;
+  cursor: pointer;
+  font-size: 15px;
+  height: 33px;
+  position: absolute;
+  right: 0;
+  top: 11px;
+  width: 33px;
+}
+
+.main {
+  height: 60vh;
+  width: 100%;
+  position: relative;
+  display: grid;
+  justify-content: center;
+  overflow: hidden;
+  align-items: center;
+}
+.main::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  width: 100%;
+  height: 100%;
+  border-radius: 0 0 100% 80%/0 0 100% 100%;
+  background: linear-gradient(60deg, purple, blue);
+  transform: scaleX(1.2);
+}
+
+.header {
+  position: relative;
+  text-align: center;
+  background: linear-gradient(
+    60deg,
+    rgba(111, 45, 200) 0%,
+    /* rgba(0, 172, 193, 1) 100% */ rgba(95, 58, 200) 100%
+  );
+  color: white;
+}
+
+.inner-header {
+  height: 50vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.waves {
+  position: relative;
+  width: 100%;
+  height: 15vh;
+  margin-bottom: -7px; /*Fix for safari gap*/
+  min-height: 100px;
+  max-height: 150px;
+}
+
+.content {
+  /* position:relative;
+  height:20vh; */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  /* background-color: white; */
+}
+
+.curved-div {
+  /* background: #ff3c00; */
+  background: linear-gradient(
+    60deg,
+    rgba(111, 45, 200) 0%,
+    /* rgba(0, 172, 193, 1) 100% */ rgba(95, 58, 200) 100%
+  );
+  /* color: #fff; */
+  text-align: center;
+}
+
+.curved-div svg {
+  display: block;
+}
+
+.rounded-map {
+  border-radius: 7%;
+}
+.rounded-sidebar {
+  border-radius: 1.23rem;
+}
+.btn-danger {
+  background-color: #d55151;
+}
